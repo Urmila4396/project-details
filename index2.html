@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌤️ Weather App</h1>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <p id="message"></p>
+
+        <div class="weather-card" id="weatherCard">
+
+            <h2 id="cityName">City</h2>
+
+            <div class="main-weather">
+                <div id="weatherIcon">🌤️</div>
+                <div>
+                    <h3 id="temperature">-- °C</h3>
+                    <p id="condition">Weather condition</p>
+                </div>
+            </div>
+
+            <div class="details">
+
+                <div class="detail-box">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <h3 id="humidity">-- %</h3>
+                </div>
+
+                <div class="detail-box">
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <h3 id="wind">-- km/h</h3>
+                </div>
+
+                <div class="detail-box">
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <h3 id="feelsLike">-- °C</h3>
+                </div>
+
+                <div class="detail-box">
+                    <span>🔽</span>
+                    <p>Pressure</p>
+                    <h3 id="pressure">-- hPa</h3>
+                </div>
+
+                <div class="detail-box">
+                    <span>👁️</span>
+                    <p>Visibility</p>
+                    <h3 id="visibility">-- km</h3>
+                </div>
+
+                <div class="detail-box">
+                    <span>🌧️</span>
+                    <p>Rain</p>
+                    <h3 id="rain">-- mm</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
